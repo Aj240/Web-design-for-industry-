@@ -1,0 +1,183 @@
+<html>
+  <head>
+    <meta charset= "UTF-8">
+	<title> Homepage </title>
+	<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.css">
+	<link type="text/css" rel="stylesheet" href="index24.css">
+	 <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <script src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/foundation.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  
+  
+  
+   <script>
+			
+			$(document).ready(function(){
+            
+            
+			
+			$('.tab_content').hide();
+            $('.tab2-content').hide();
+            $('.tab_content:first').show();
+
+
+           $('ul.tabs li').click(function(){
+           
+
+                   $('.tab_content').hide();
+                   $('.tab_content').removeClass('hidden');
+                   $('.tab2-content').addClass('hidden');
+                   var theactive = $(this).attr('rel');
+                   $('#'+theactive).fadeIn();
+  
+  $('ul.tabs li').removeClass('active');
+  $(this).addClass('active');
+  
+ 
+                     
+                      });
+					  
+					  
+					  });
+					  
+		</script>
+  
+  
+  </head>
+  
+  <body>
+  
+  <div class= "row">
+  
+  <div class= "large-2 columns">
+  <section>
+<nav>
+ <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="index.html">Button groups</a></li>
+        <li><a href="header.html" class="disabled">Header</a></li>
+        <li><a href="jumbtron.html" class="disabled">Jumbtron</a></li>
+		<li><a href="footer.html" class="disabled">Footer</a></li>
+		<li><a href="form.html" class="disabled" >Forms</a></li>
+      </ul>
+</nav>
+</section>
+</div>
+
+<div class="large-10 columns">
+<div>
+
+   <h3> Navigation </h3>
+   
+   <p> Button groups for the website </p>
+     <div>
+	
+	     	 <footer>
+	  
+	 
+	  
+	  <div class="footer-top">
+	  
+	  <div class="social2">
+	  
+		<h2> Connect with us </h2>
+		
+		<a href=""><img src="facebook2.png" /></a>
+		<a href=""><img src="twitter2.png" /></a>
+		<a href=""><img src="instagram-512.png" /></a>
+		
+       <div class="border"></div>
+	  
+	  
+	   <div class="list">
+	    <a> Contact us </a>
+		<a> Site map </a>
+		<a> Private policy </a>
+		<a> Terms and services </a>
+	  </div>	
+		
+		
+		
+		</div>
+		
+	  </div>
+		
+		
+		
+	  
+	    
+		
+	  </footer> 
+	  
+	    </div>
+</div>
+<br />
+  
+    <div>
+	
+	<ul class="tabs">
+  <li class="active" rel="tab1">Live code</li>
+  <li rel="tab2">Context</li>
+  <li rel="tab3">Notes</li>
+</ul>
+
+    <div id= "tab1" class="tab_content code">
+	<pre class="prettyprint">
+	
+	footer {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    overflow: hidden;
+      }
+
+    .div1 {
+    width: 100%;
+    text-align: center;
+    color: white;
+        }
+	
+	</pre>
+	
+	<pre class="prettyprint">
+	
+	  &lt;footer class= footer&gt;
+	  &lt;div class=&quot;footer-top&quot;&gt; 
+	  &lt;div class=&quot;social2&quot;&gt; 
+	  &lt;h2&gt; Connect with us &lt;/h2&gt; 
+	  &lt;a href=&quot;&quot;&gt;&lt;img src=&quot;facebook2.png&quot; /&gt;&lt;/a&gt; 
+	  &lt;a href=&quot;&quot;&gt;&lt;img src=&quot;twitter2.png&quot; /&gt;&lt;/a&gt; 
+	  &lt;a href=&quot;&quot;&gt;&lt;img src=&quot;instagram-512.png&quot; /&gt;&lt;/a&gt; 
+	  &lt;div class=&quot;border&quot;&gt;&lt;/div&gt; 
+	  &lt;div class=&quot;list&quot;&gt; &lt;a&gt; Contact us &lt;/a&gt; 
+	  &lt;a&gt; Site map &lt;/a&gt; &lt;a&gt; Private policy &lt;/a&gt; &lt;a&gt; Terms and services 
+	  &lt;/a&gt; &lt;/div&gt;	
+	  &lt;/div&gt; &lt;/div&gt; 
+	  &lt;/footer&gt;
+	
+	</pre>
+	</div>
+	
+	<div id= "tab2" class="tab_content code">
+	<img src="footer.PNG"
+	</div>
+	
+	</div>
+    
+    
+
+
+	
+	</div>
+	
+</div>
+  
+
+</body>
+
+</html>

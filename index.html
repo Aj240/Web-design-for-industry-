@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset= "UTF-8">
+	<title> Homepage </title>
+	<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.css">
+	<link type="text/css" rel="stylesheet" href="index24.css">
+	 <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <script src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/foundation.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  
+  
+  
+   <script>
+			
+			$(document).ready(function(){
+            
+            
+			
+			$('.tab_content').hide();
+            $('.tab2-content').hide();
+            $('.tab_content:first').show();
+
+
+           $('ul.tabs li').click(function(){
+           
+
+                   $('.tab_content').hide();
+                   $('.tab_content').removeClass('hidden');
+                   $('.tab2-content').addClass('hidden');
+                   var theactive = $(this).attr('rel');
+                   $('#'+theactive).fadeIn();
+  
+  $('ul.tabs li').removeClass('active');
+  $(this).addClass('active');
+  
+ 
+                     
+                      });
+					  
+					  
+					  });
+					  
+		</script>
+  
+  
+  </head>
+  
+  <body>
+  
+  <div class= "row">
+  
+  <div class= "large-2 columns">
+  <section>
+<nav>
+ <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="nav.html">Navigation</a></li>
+        <li><a href="header.html" class="disabled">Header</a></li>
+        <li><a href="jumbtron.html" class="disabled">Jumbtron</a></li>
+		<li><a href="footer.html" class="disabled">Footer</a></li>
+		<li><a href="form.html" class="disabled" >Forms</a></li>
+      </ul>
+</nav>
+</section>
+</div>
+
+<div class="large-10 columns">
+<div>
+
+   <h3> Buttons </h3>
+   
+   <p> Types </p>
+   
+   <p> Button groups for the website </p>
+     <div>
+	
+	      <a href="#" class="buttons standard">Standard</a>
+		  
+		   <a href="#" class="buttons second">Second</a>
+		   
+		    <a href="#" class="buttons completed">Completed</a>
+			
+			 <a href="#" class="buttons error">Error</a>
+	  
+	    </div>
+		
+		 <div>
+	      <p> Sizes </p>
+		  
+	      <a href="#" class="buttons standard-sm">Sm</a>
+		  
+		   <a href="#" class="buttons standard-md">md</a>
+		   
+		    <a href="#" class="buttons standard-lg">lg</a>
+			
+			
+	  
+	    </div>
+</div>
+<br />
+  
+    <div>
+	
+	<ul class="tabs">
+  <li class="active" rel="tab1">Live code</li>
+  <li rel="tab2">Context</li>
+  <li rel="tab3">Notes</li>
+</ul>
+
+    <div id= "tab1" class="tab_content code">
+	<pre class="prettyprint">
+	
+	
+	.button3 {
+	
+                   background-color: #3adb76;
+                   color: #F5F5F5;
+              }
+	</pre>
+	
+	
+	<p> HTML code </p>
+	
+	<pre class="prettyprint">
+	
+	&lt;div&gt; 
+	    &lt;a href=&quot;#&quot; class=&quot;buttons standard&quot;&gt;Standard&lt;/a&gt; 
+	    &lt;a href=&quot;#&quot; class=&quot;buttons second&quot;&gt;Second&lt;/a&gt; 
+	    &lt;a href=&quot;#&quot; class=&quot;buttons completed&quot;&gt;Completed&lt;/a&gt; 
+	    &lt;a href=&quot;#&quot; class=&quot;buttons error&quot;&gt;Error&lt;/a&gt; 
+	&lt;/div&gt; 
+	
+	&lt;div&gt; 
+	   &lt;p&gt; Sizes &lt;/p&gt; 
+	   &lt;a href=&quot;#&quot; class=&quot;buttons standard-sm&quot;&gt;Sm&lt;/a&gt; 
+	   &lt;a href=&quot;#&quot; class=&quot;buttons standard-md&quot;&gt;md&lt;/a&gt; 
+	   &lt;a href=&quot;#&quot; class=&quot;buttons standard-lg&quot;&gt;lg&lt;/a&gt; 
+	&lt;/div&gt;
+	
+	</pre>
+	
+	</div>
+	
+	<div id= "tab2" class="tab_content code">
+	<img src="button.PNG">
+	</div>
+	
+	</div>
+    
+    
+
+
+	
+	</div>
+	
+</div>
+  
+
+
+</body>
+
+</html>

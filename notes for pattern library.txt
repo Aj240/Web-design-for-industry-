@@ -1,0 +1,15 @@
+https://www.lightningdesignsystem.com/utilities/description-list/
+
+https://www.slideshare.net/WolfBruening/how-to-build-the-perfect-pattern-libraryy
+
+https://www.slideshare.net/brianpeppler/design-pattern-libraries
+
+https://www.thinkcompany.com/2015/02/using-pattern-libraries-for-front-end-dev-efficiency-communication-structure/
+
+https://clearleft.com/posts/382
+
+https://www.smashingmagazine.com/2016/07/building-maintaining-atomic-design-systems-pattern-lab/
+
+https://medium.com/re-write/the-unicorn-workflow-design-to-code-with-atomic-design-principles-and-sketch-8b0fe7d05a37
+
+https://github.com/airbnb/javascript
